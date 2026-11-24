@@ -1,17 +1,13 @@
-# Mapa de interfaces físicas
+# Mapa conceitual de interfaces físicas
 
-## Estado
+Este mapa deriva do cenário descrito no enunciado. A inspeção de placa não integra o escopo desta entrega; os itens abaixo são interfaces a considerar, não interfaces observadas ou confirmadas em um NexaSense específico.
 
-Pendente: nenhuma placa ou fotografia do NexaSense foi disponibilizada. UART, JTAG, SPI, I²C, pinos de programação, pontos de teste e acesso à flash são itens a verificar, não interfaces confirmadas.
+| Interface/área | Possível capacidade | Questão de segurança no projeto |
+|---|---|---|
+| UART | Logs, console ou bootloader, conforme configuração | Há segredos nos logs? O acesso privilegiado é restrito em produção? |
+| JTAG | Depuração ou controle, se habilitado | O bloqueio de debug é compatível com fabricação e suporte? |
+| SPI/I²C | Comunicação com sensores e memória | Um acesso indevido exporia ou alteraria dados? |
+| Programação/USB | Gravação, recuperação ou alimentação | O fluxo de gravação exige autorização? |
+| Flash | Firmware e parâmetros de configuração | Dados sensíveis são protegidos e chaves são únicas? |
 
-| Interface/área | Onde procurar | Capacidade possível | Evidência a registrar | Estado |
-|---|---|---|---|---|
-| UART | Headers, pads, trilhas próximas ao MCU | Logs, console ou bootloader, conforme configuração | Fotos, tensão lógica, captura de boot autorizada | Pendente |
-| JTAG | Pads do MCU | Depuração/leitura/controle se habilitada | Foto, identificação do MCU e estado de bloqueio | Pendente |
-| SPI/I²C | Barramentos de sensores/flash | Comunicação com periféricos; risco depende de acesso | Mapa de conexões e componentes identificados | Pendente |
-| Programação/USB | Conector e circuito associado | Gravação, recuperação ou alimentação | Foto, esquema e comportamento observado | Pendente |
-| Flash externa | Encapsulamento e trilhas | Armazenamento de firmware/configuração | Identificação do componente e proteção | Pendente |
-
-## Cuidados e avaliação
-
-Não classificar a presença de uma interface como falha por si só. Verificar acessibilidade, autenticação, privilégios, conteúdo exposto, proteção da memória e necessidade operacional. Confirmar níveis de tensão antes de conectar equipamento. Não gravar eFuses nem executar operações irreversíveis.
+Uma interface acessível não é automaticamente uma vulnerabilidade. A avaliação deve relacionar acessibilidade, privilégios, conteúdo, proteções e impacto. Não há pinagem, tensão ou medição atribuída ao dispositivo nesta entrega.

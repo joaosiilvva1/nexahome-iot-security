@@ -1,24 +1,23 @@
-# Conferência com o enunciado do professor
+# Conferência da entrega
 
-Esta tabela separa os itens preparados dos itens que dependem de ensaio em equipamento e da gravação final. “Preparado” significa que o documento ou procedimento está no repositório; não significa que o produto real foi testado.
+O escopo desta versão é análise documental do cenário NexaSense e demonstração em software local. A inspeção física foi excluída do escopo informado para esta entrega; nenhum resultado simulado é atribuído ao produto.
 
-| Exigência | Material no repositório | Estado honesto |
+| Requisito | Material | Estado nesta versão |
 |---|---|---|
-| Descrição do dispositivo e arquitetura | Relatório, diagrama SVG e site | Preparado com base no enunciado; confirmar no equipamento |
-| Mapa da superfície de ataque | Site, mapa físico e notas | Planejado; interfaces reais não observadas |
-| Metodologia e preservação do firmware | Notas e checklist de hash | Procedimento preparado; firmware original não recebido |
-| Hash SHA-256 do firmware do dispositivo | firmware/hashes.txt | Pendente; não existe imagem original fornecida |
-| Análise de partições, strings, endpoints e configuração | firmware/analysis-notes.md | Pendente; exige imagem autorizada |
-| Análise das interfaces físicas | hardware/interface-map.md | Pendente; exige inspeção da placa |
-| Análise da comunicação do dispositivo | network/protocol-analysis.md | Pendente; sem PCAP ou captura do dispositivo |
-| Demonstração controlada | demo/local_lab_simulation.py e registros | Simulação local reproduzível; não prova falha no produto |
-| Achados com evidência, impacto, probabilidade e mitigação | findings/findings.md e relatório | Cenários do produto condicionais; observações simuladas separadas |
-| Referência real pesquisada | case-study.md e references.md | Preparado com fonte primária e lição para NexaHome |
-| Mitigações e hardening comercial | remediation/hardening-plan.md | Preparado conceitualmente |
-| README, estrutura e reprodutibilidade | README.md | Preparado |
-| Vídeo de até quatro minutos | video/roteiro-ate-4-minutos.md | Roteiro preparado; vídeo ainda não gravado |
+| Relatório curto em PDF | `report/Relatorio-Tecnico-NexaHome.pdf` | Incluído; arquitetura, método, limites, matriz de risco, estudo e hardening |
+| Arquitetura e componentes | `architecture/architecture-diagram.svg` | Incluídos como modelo de referência baseado no enunciado |
+| Mapa da superfície de ataque | Site e `hardware/interface-map.md` | Incluído conceitualmente; sem inspeção ou medições de placa |
+| Preservação e hash do firmware | `firmware/hashes.txt`, `firmware/simulated-fixture-hash.txt` | Procedimento e exemplo sintético separados; não há hash do firmware NexaSense |
+| Análise básica de firmware | `firmware/analysis-notes.md` e demonstração | O comportamento de atualização é simulado; imagem do produto não analisada |
+| Interfaces físicas | `hardware/interface-map.md` | Discussão conceitual; ensaio físico fora do escopo adotado |
+| Comunicação e protocolo | `network/protocol-analysis.md` e log JSONL | Demonstração HTTP reproduzida em loopback; não representa tráfego do produto |
+| Demonstração controlada | `demo/local_lab_simulation.py` e saída registrada | Reproduzível em software local, com dados sintéticos |
+| Riscos, impacto e mitigação | `findings/findings.md` e relatório | Cenários condicionais separados das observações do simulador |
+| Referência real e lição para NexaHome | `case-study.md`, `references.md` | Incluídos com estudo PurpleAir e referências técnicas |
+| Plano de hardening | `remediation/hardening-plan.md` | Incluído para versão comercial |
+| README e reprodução | `README.md` | Incluídos com escopo, ferramentas, resumos, evidências e comando |
+| Vídeo de até quatro minutos | `video/roteiro-ate-4-minutos.md` | Roteiro incluído; falta gravar e adicionar o link do vídeo |
 
-## Para transformar em entrega prática completa
+## Única ação restante para fechar o pacote de entrega
 
-Obter a placa de laboratório ou equivalente físico, a imagem de firmware autorizada e uma rede isolada. Coletar fotos/saída serial, hashes, observações/capturas de rede e uma demonstração reproduzível no aparelho. Depois atualizar o estado dos achados e gravar o vídeo com essas evidências. Não substituir esses itens por dados simulados.
-
+Gravar a apresentação de até quatro minutos conforme o roteiro, publicar em plataforma aceita pelo professor e inserir o link neste README. Se o professor exigir evidências de equipamento apesar do escopo adotado, o vídeo e o relatório deverão ser atualizados para refletir essas evidências reais; a simulação não as substitui.

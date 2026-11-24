@@ -1,11 +1,7 @@
-REGISTRO DE PRESERVAÇÃO - firmware real do dispositivo
+REGISTRO DE PRESERVAÇÃO DE FIRMWARE
 
-Arquivo original: PENDENTE - não recebido
-Tamanho em bytes: PENDENTE
-Origem/autorização: PENDENTE
-Data de recebimento: PENDENTE
-SHA-256 (original): PENDENTE - não calcular sem o arquivo
-Cópia de trabalho: PENDENTE
-SHA-256 (cópia): PENDENTE
+Escopo desta entrega: demonstração local com bytes sintéticos. Não há imagem de firmware do NexaSense identificada ou usada neste pacote; por isso, não existe hash do firmware do produto para registrar.
 
-A demonstração de hash de uma string sintética está separada em simulated-fixture-hash.txt. Esse valor não identifica firmware do NexaSense.
+Fixture da demonstração: consulte simulated-fixture-hash.txt. Esse SHA-256 identifica somente bytes sintéticos criados para ilustrar integridade e não deve ser citado como hash do firmware NexaSense.
+
+Procedimento para uma imagem autorizada: registrar nome, tamanho, origem e data; calcular SHA-256 do original; preservar o original e analisar uma cópia de trabalho; registrar o hash da cópia e as ferramentas utilizadas.

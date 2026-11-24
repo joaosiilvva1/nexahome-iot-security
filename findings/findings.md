@@ -2,18 +2,18 @@
 
 ## Resultado atual
 
-Não há achados confirmados sobre o NexaSense: não foi fornecido hardware, firmware ou captura de rede para inspeção. A matriz abaixo registra cenários que devem ser verificados. Os níveis são prioridade preliminar condicionada à confirmação, não uma classificação de vulnerabilidade observada.
+O escopo desta entrega é documental e de simulação local; não foram executados testes no produto. A matriz registra cenários condicionais, não vulnerabilidades observadas. Os níveis são prioridades preliminares e dependem de confirmação no sistema correspondente.
 
 | ID | Evidência | Fragilidade/ameaça | Impacto | Probabilidade | Prioridade condicional | Recomendação | Estado |
 |---|---|---|---|---|---|---|---|
 | C01 | Nenhuma evidência do NexaSense; cenário descrito no estudo PurpleAir | Se atualização aceitasse imagem sem autenticação/assinatura, um atacante no caminho poderia tentar firmware não autorizado | Controle do dispositivo, dados falsos ou indisponibilidade | Média se atualização alcançável e sem validação | Alta se confirmado | Assinatura de firmware, verificação no bootloader, TLS autenticado, anti-rollback e recuperação segura | Hipótese |
 | C02 | Nenhuma evidência do NexaSense; UART/JTAG ainda não inspecionados | Se debug acessível sem proteção expuser firmware, segredos ou bootloader privilegiado, atacante com acesso físico poderia extrair/alterar dados ou código | Comprometimento do dispositivo e exposição de credenciais | Média, condicionada à acessibilidade/proteções | Média/alta se confirmado, conforme acesso e privilégio | Remover pads quando possível, proteger/desabilitar debug em produção, Secure Boot/Flash Encryption conforme MCU | Hipótese |
 | C03 | Nenhuma captura recebida | Se dados/credenciais trafegarem sem proteção adequada, observador na rede local poderia lê-los ou alterá-los | Exposição de dados e comandos | Média se tráfego local e sem proteção | Alta se segredos/comandos confirmados | TLS com validação de certificado, autenticação individual, integridade e segmentação | Hipótese |
-| F00 | Escopo e materiais recebidos: somente enunciado/template | Não é um achado técnico; nenhum teste do produto foi executado | Indeterminado | Indeterminada | Não classificar | Executar a avaliação em laboratório e substituir hipóteses por evidência | Limitação atual |
+| F00 | Escopo documental e saída da simulação local | Não é um achado técnico do NexaSense | Não aplicável ao produto | Não aplicável | Não classificar | Manter os resultados do modelo separados de qualquer afirmação sobre o produto | Limite do escopo |
 
 ## Regra de promoção a achado
 
-Promover C01-C03 a achado somente com evidência reproduzível do equipamento autorizado: identificação da placa/firmware, passos, captura ou arquivo redigido, condição necessária e avaliação de impacto. Se o mecanismo for seguro ou a interface não estiver acessível, registrar teste e resultado negativo em vez de manter hipótese como vulnerabilidade.
+Interpretar C01-C03 como perguntas de avaliação, não como achados confirmados. A demonstração disponível comprova somente o comportamento do software didático descrito em SIM01 e SIM02. Se esse método for aplicado a outro sistema, vincular qualquer conclusão a evidência reproduzível e ao seu escopo.
 
 ## Observações do simulador didático
 

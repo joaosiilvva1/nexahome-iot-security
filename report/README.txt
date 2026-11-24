@@ -1,1 +1,1 @@
-Relatório técnico em PDF. O texto distingue cenários condicionais, resultados da simulação local e itens pendentes de evidência do NexaSense real. Consulte deliverables-checklist.md para conferir o estado de todos os requisitos.
+Relatório técnico em PDF. O documento apresenta a avaliação documental do cenário NexaSense, a simulação local, hipóteses condicionais, caso pesquisado e recomendações. A matriz de requisitos está em deliverables-checklist.md.

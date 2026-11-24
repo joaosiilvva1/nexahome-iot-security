@@ -1,14 +1,15 @@
-# Roteiro para vídeo de demonstração (até 4 minutos)
+# Roteiro para vídeo de demonstração de até quatro minutos
 
-**Importante:** este roteiro prepara a apresentação, mas não é um vídeo gravado. Para cumprir o requisito de comprovação prática, grave sua própria captura com a placa e as evidências do laboratório.
+Este roteiro apresenta o escopo documental e a demonstração local. A simulação deve ser identificada como modelo didático, sem atribuir seus resultados ao equipamento NexaSense.
 
-- **0:00-0:25 | Escopo.** Apresentar o NexaSense/placa equivalente, autorização, rede de laboratório isolada e limites dos testes.
-- **0:25-0:55 | Arquitetura.** Mostrar o diagrama: sensores -> MCU/flash -> firmware -> Wi-Fi -> serviço local. Dizer quais itens foram confirmados na placa.
-- **0:55-1:25 | Firmware.** Exibir nome/tamanho/SHA-256 da imagem autorizada e uma evidência redigida de strings, partições ou configuração. Nunca exibir segredo.
-- **1:25-1:55 | Hardware.** Mostrar placa e mapa físico; demonstrar apenas observação segura da interface realmente identificada. Não conectar sem confirmar tensão e pinagem.
-- **1:55-2:30 | Comunicação.** Mostrar captura de laboratório e identificar origem, destino, protocolo, dados e proteção observada.
-- **2:30-3:05 | Demonstração.** Reproduzir uma condição confirmada no dispositivo. O simulador demo/local_lab_simulation.py pode ilustrar o método; declarar em voz alta que é simulação local e não achado do NexaSense. O trecho prático do aparelho ainda depende da placa.
-- **3:05-3:40 | Risco e mitigação.** Conectar evidência -> fragilidade -> impacto -> prioridade e recomendações correspondentes.
-- **3:40-4:00 | Fechamento.** Explicar limites, estado dos testes e medidas prioritárias para uma versão comercial.
+- **0:00–0:25 | Objetivo e escopo.** Apresentar o cenário NexaHome/NexaSense e dizer que esta versão cobre análise documental e demonstração de software local.
+- **0:25–0:55 | Arquitetura.** Mostrar `architecture/architecture-diagram.svg` e explicar sensores, MCU/flash, firmware, Wi-Fi e serviço como arquitetura descrita pelo enunciado.
+- **0:55–1:25 | Superfícies.** Exibir o mapa conceitual e explicar os riscos de UART/JTAG, armazenamento, atualização e comunicação, sem dizer que foram observados em uma placa.
+- **1:25–2:10 | Firmware e integridade.** Mostrar o manifesto da fixture sintética e explicar que SHA-256 serve para rastreabilidade; esse hash não identifica firmware do produto.
+- **2:10–3:00 | Demonstração local.** Executar `python demo/local_lab_simulation.py`; mostrar o log HTTP de loopback e a comparação de atualização. Destacar que os dados e bytes são artificiais.
+- **3:00–3:35 | Riscos e referências.** Apresentar C01–C03 como hipóteses condicionais, SIM01–SIM02 como resultados do modelo e relacionar o caso PurpleAir às recomendações.
+- **3:35–4:00 | Hardening e fechamento.** Resumir assinatura/anti-rollback, Secure Boot, Flash Encryption, TLS e redução de debug; apontar o PDF e as fontes.
 
-Inserir o link do vídeo final aqui: PENDENTE.
+## Publicação
+
+Grave a apresentação, publique na plataforma aceita pelo professor e insira o link no README. Não apresente a demonstração simulada como teste do produto.
