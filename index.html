@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projeto acadêmico de avaliação de segurança IoT do NexaSense.">
+  <meta name="theme-color" content="#092b54">
+  <title>NexaSense | Segurança IoT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="NexaSense, início">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span><strong>NexaSense</strong><small>Segurança IoT</small></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#projeto">Projeto</a></li><li><a href="#arquitetura">Arquitetura</a></li>
+          <li><a href="#superficies">Superfícies</a></li><li><a href="#riscos">Riscos</a></li>
+          <li><a href="#hardening">Hardening</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Projeto acadêmico · Hardware Hacking</p>
+          <h1 id="hero-title">Segurança começa antes do produto.</h1>
+          <p class="hero-lead">Uma avaliação estruturada do NexaSense, dispositivo IoT de monitoramento ambiental descrito no estudo de caso NexaHome.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projeto">Conhecer a avaliação <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="report/Relatorio-Tecnico-NexaHome.pdf">Abrir relatório PDF <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Protótipo conceitual para fins acadêmicos. A análise da placa real depende de acesso ao hardware, ao firmware e ao ambiente autorizado.</p>
+        </div>
+        <div class="hero-art">
+          <img src="assets/imagens/hero-nexasense.svg" alt="Ilustração conceitual de uma placa IoT conectada a sensores ambientais e a uma rede local" width="700" height="520">
+          <span class="art-stamp" aria-hidden="true">AVALIAR<br>PROTEGER<span>✳</span></span>
+        </div>
+      </div>
+    </section>
+    <section class="section-pad" id="projeto" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">01 / O projeto</p><h2 id="about-title">Do protótipo ao produto seguro.</h2></div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>O enunciado descreve um microcontrolador da família ESP32, sensores de temperatura e umidade, firmware e conectividade Wi-Fi.</p>
+            <p>O trabalho organiza a avaliação das interfaces físicas, do armazenamento e firmware, do mecanismo de atualização e das comunicações.</p>
+            <a class="inline-link" href="findings/findings.md">Ver matriz de riscos e estado dos achados <span aria-hidden="true">↗</span></a>
+          </div>
+          <aside class="status-card" aria-label="Estado da avaliação">
+            <div class="feature-top"><span>ESTADO DA AVALIAÇÃO</span><span class="status-dot" aria-hidden="true"></span></div>
+            <p>Documentação e demonstração didática preparadas.</p>
+            <div class="feature-tags"><span>Placa real pendente</span><span>Firmware pendente</span><span>Captura pendente</span></div>
+          </aside>
+        </div>
+        <div class="pillars" aria-label="Etapas da avaliação">
+          <article class="pillar"><span>01</span><h3>Mapear</h3><p>Identificar componentes, interfaces e fluxos.</p></article>
+          <article class="pillar"><span>02</span><h3>Preservar</h3><p>Registrar origem e integridade do firmware.</p></article>
+          <article class="pillar"><span>03</span><h3>Demonstrar</h3><p>Reproduzir condições no laboratório autorizado.</p></article>
+          <article class="pillar"><span>04</span><h3>Mitigar</h3><p>Priorizar controles ligados às evidências.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="quote-band" aria-label="Princípio da avaliação">
+      <div class="container quote-inner"><span aria-hidden="true">“</span><p>Uma interface não é um achado por si só.<br><em>Evidência conecta exposição a risco.</em></p><b aria-hidden="true">✳</b></div>
+    </section>
+    <section class="section-pad architecture" id="arquitetura" aria-labelledby="architecture-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 / Arquitetura de referência</p><h2 id="architecture-title">Do sensor ao serviço local.</h2></div>
+        <p class="section-intro">Modelo baseado no enunciado. MCU, interfaces, protocolos e serviço precisam ser confirmados na placa e no firmware do laboratório.</p>
+        <div class="flow" aria-label="Fluxo conceitual dos dados no NexaSense">
+          <article><span>01</span><h3>Sensores</h3><p>Temperatura<br>Umidade</p></article><b aria-hidden="true">→</b>
+          <article class="primary"><span>02</span><h3>MCU e flash</h3><p>ESP32 indicado<br>Memória a confirmar</p></article><b aria-hidden="true">→</b>
+          <article><span>03</span><h3>Firmware</h3><p>Leitura, logs<br>e atualização</p></article><b aria-hidden="true">→</b>
+          <article><span>04</span><h3>Rede local</h3><p>Wi-Fi<br>Protocolo a confirmar</p></article><b aria-hidden="true">→</b>
+          <article><span>05</span><h3>Serviço</h3><p>Broker/endpoint<br>a confirmar</p></article>
+        </div>
+        <p class="caption">Veja o <a href="architecture/architecture-diagram.svg">diagrama SVG</a>. “A confirmar” separa o cenário da inspeção real.</p>
+      </div>
+    </section>
+    <section class="section-pad" id="superficies" aria-labelledby="surface-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">03 / Superfície de ataque</p><h2 id="surface-title">Quatro áreas para investigar.</h2></div>
+        <div class="surface-grid">
+          <article><span>01 / FÍSICA</span><h3>Interfaces e depuração</h3><p>Verificar UART, JTAG, SPI, I²C, USB, pads e pontos de teste; avaliar acessibilidade e proteções.</p><small>INSPEÇÃO PENDENTE</small></article>
+          <article><span>02 / FIRMWARE</span><h3>Imagem e armazenamento</h3><p>Preservar o original, calcular SHA-256 e analisar formato, partições, strings e configurações com dados redigidos.</p><small>IMAGEM NÃO FORNECIDA</small></article>
+          <article><span>03 / ATUALIZAÇÃO</span><h3>Origem e integridade</h3><p>Examinar autenticação, validação criptográfica, anti-rollback e recuperação após falhas.</p><small>MECANISMO A CONFIRMAR</small></article>
+          <article><span>04 / REDE</span><h3>Dados e protocolos</h3><p>Capturar tráfego em rede isolada e avaliar destinos, conteúdo, autenticação, confidencialidade e integridade.</p><small>CAPTURA PENDENTE</small></article>
+        </div>
+      </div>
+    </section>
+    <section class="section-pad findings" id="riscos" aria-labelledby="findings-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">04 / Riscos e demonstração</p><h2 id="findings-title">Hipóteses não são falhas confirmadas.</h2></div>
+        <p class="section-intro">Cenários para orientar os testes; sem evidência do dispositivo autorizado, não são achados do NexaSense.</p>
+        <div class="risk-list">
+          <article><b>C01</b><div><h3>Atualização sem validação</h3><p>Se imagens não assinadas puderem ser instaladas, código não autorizado pode alterar leituras ou comprometer o dispositivo.</p></div><small>A VERIFICAR</small></article>
+          <article><b>C02</b><div><h3>Depuração exposta</h3><p>O risco depende do acesso físico, dos dados expostos e das proteções da interface observada.</p></div><small>A VERIFICAR</small></article>
+          <article><b>C03</b><div><h3>Tráfego sem proteção adequada</h3><p>Se credenciais ou comandos trafegarem sem proteção, um observador local pode lê-los ou alterá-los.</p></div><small>A VERIFICAR</small></article>
+        </div>
+        <div class="demo-band"><div><p class="eyebrow">DEMONSTRAÇÃO DIDÁTICA</p><h3>Modelo offline de atualização.</h3><p>O script aceita bytes sintéticos sem verificar assinatura. Ilustra uma classe de erro; não testa a placa real.</p></div><a class="button button-light" href="demo/unsigned_update_demo.py" download>Ver script <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+    <section class="case-band" aria-labelledby="case-title">
+      <div class="container case-grid">
+        <div><p class="eyebrow">05 / Caso público</p><h2 id="case-title">PurpleAir: firmware e atualização no mesmo modelo.</h2></div>
+        <div><p>Um estudo acadêmico relatou em sensores PurpleAir com ESP8266 uma interface UART que permitia acesso físico a firmware e credenciais Wi-Fi, além de atualização OTA sem autenticação/verificação adequada naquele dispositivo.</p><p>O caso recomenda avaliar hardware, dados e atualização em conjunto. É referência externa, <strong>não evidência contra a NexaHome</strong>.</p><a class="inline-link" href="https://www.cs.uml.edu/~xinwenfu/paper/Conferences/19_ICII_MicrocontrollerBasedIoTSystemFirmwareSecurity-CaseStudies.pdf" target="_blank" rel="noopener">Ler o estudo primário ↗</a></div>
+      </div>
+    </section>
+    <section class="section-pad" id="hardening" aria-labelledby="hardening-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">06 / Próxima versão</p><h2 id="hardening-title">Hardening com foco no ciclo de vida.</h2></div>
+        <div class="hardening-grid">
+          <article><span>01</span><h3>Boot e flash</h3><p>Secure Boot e Flash Encryption conforme a variante ESP32 e o plano de provisionamento.</p></article>
+          <article><span>02</span><h3>Atualização assinada</h3><p>Validar assinatura, versão, anti-rollback e recuperação segura.</p></article>
+          <article><span>03</span><h3>Acesso mínimo</h3><p>Credenciais individuais, logs sem segredos e debug restrito.</p></article>
+          <article><span>04</span><h3>Comunicação protegida</h3><p>TLS validado, identidade por dispositivo, integridade e segmentação.</p></article>
+        </div>
+        <div class="resource-row"><p>Referências: NISTIR 8259A, ETSI EN 303 645, OWASP ISTG, MITRE EMB3D e documentação Espressif.</p><a class="button button-outline" href="remediation/hardening-plan.md">Plano de hardening ↗</a></div>
+      </div>
+    </section>
+    <section class="section-pad deliverables" aria-labelledby="deliverables-title">
+      <div class="container deliverable-grid">
+        <div><p class="eyebrow">07 / Materiais</p><h2 id="deliverables-title">Documentação do projeto.</h2><p>Relatório e registros organizados no repositório; as evidências reais dependem do laboratório.</p></div>
+        <div class="deliverable-links">
+          <a href="report/Relatorio-Tecnico-NexaHome.pdf">Relatório técnico em PDF <b>↗</b></a>
+          <a href="firmware/analysis-notes.md">Notas de firmware <b>↗</b></a>
+          <a href="hardware/interface-map.md">Mapa físico <b>↗</b></a>
+          <a href="network/protocol-analysis.md">Análise de comunicação <b>↗</b></a>
+          <a href="video/roteiro-ate-4-minutos.md">Roteiro do vídeo <b>↗</b></a>
+          <a href="references.md">Referências <b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>NexaSense <span>·</span> Projeto acadêmico de segurança IoT</p><p>Testes somente em dispositivos e redes autorizados.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+</body>
+</html>
