@@ -2,7 +2,7 @@
 
 Projeto acadêmico de Hardware Hacking apresentado em um site estático de página única. A organização visual usa navegação por seções, destaque inicial, cartões temáticos e rodapé, com conteúdo e implementação originais para o estudo de caso NexaHome.
 
-**Site publicado:** PENDENTE de ativação do GitHub Pages.
+**Site publicado:** https://joaosiilvva1.github.io/nexahome-iot-security/
 
 ## Como abrir
 
@@ -35,3 +35,4 @@ HTML semântico, links por âncora, link para pular ao conteúdo, foco visível,
 ## Fontes
 
 OWASP IoT Security Testing Guide, NISTIR 8259A, ETSI EN 303 645 V3.1.3, MITRE EMB3D, documentação Espressif ESP-IDF e estudo acadêmico sobre PurpleAir. URLs e aplicação em references.md.
+
