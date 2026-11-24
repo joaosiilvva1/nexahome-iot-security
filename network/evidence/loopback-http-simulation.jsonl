@@ -1,0 +1,1 @@
+{"simulation": true, "transport": "HTTP", "tls": false, "authentication": false, "path": "/telemetry", "body_utf8": "{\"device_id\":\"LAB-NEXASENSE-SIM\",\"temperature_c\":23.8,\"humidity_pct\":50.2,\"data_class\":\"synthetic\"}"}

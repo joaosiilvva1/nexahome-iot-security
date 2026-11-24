@@ -1,0 +1,6 @@
+LAB FIXTURE ONLY - NOT THE NEXASENSE DEVICE FIRMWARE
+Name: simulated firmware byte string
+Size: 29 bytes
+SHA-256: 9e1bf4c51e8567271fe754ac7255fb56353b6b00faf306f061e8c93be21a5020
+Origin: generated locally by demo/local_lab_simulation.py
+Use: demonstrate hash recording; not evidence from the supplied device.

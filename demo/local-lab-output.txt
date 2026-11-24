@@ -1,0 +1,11 @@
+LOCAL SOFTWARE LAB - SIMULATION ONLY; NO PHYSICAL DEVICE
+HTTP destination: http://127.0.0.1:50497/telemetry (loopback only)
+HTTP server response: {"accepted":true,"simulation":true}
+Observed cleartext synthetic body: {"device_id":"LAB-NEXASENSE-SIM","temperature_c":23.8,"humidity_pct":50.2,"data_class":"synthetic"}
+Evidence log: network/evidence/loopback-http-simulation.jsonl
+Transport/authentication in model: HTTP / no TLS / no authentication
+Original synthetic fixture SHA-256: 9e1bf4c51e8567271fe754ac7255fb56353b6b00faf306f061e8c93be21a5020
+Modified package accepted by insecure model: True
+Signed original accepted by comparison verifier: True
+Modified package accepted by comparison verifier: False
+Limit: outcomes describe this local model only; they are not findings on NexaSense.

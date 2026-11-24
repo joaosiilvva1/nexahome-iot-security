@@ -14,3 +14,14 @@ Não há achados confirmados sobre o NexaSense: não foi fornecido hardware, fir
 ## Regra de promoção a achado
 
 Promover C01-C03 a achado somente com evidência reproduzível do equipamento autorizado: identificação da placa/firmware, passos, captura ou arquivo redigido, condição necessária e avaliação de impacto. Se o mecanismo for seguro ou a interface não estiver acessível, registrar teste e resultado negativo em vez de manter hipótese como vulnerabilidade.
+
+## Observações do simulador didático
+
+Estas observações foram reproduzidas no modelo de software local e não devem ser promovidas a achados do NexaSense.
+
+| ID | Evidência no modelo | Resultado | Impacto no modelo | Probabilidade no modelo | Risco para o produto |
+|---|---|---|---|---|---|
+| SIM01 | network/evidence/loopback-http-simulation.jsonl | Corpo JSON sintético observável no servidor HTTP local, sem TLS/autenticação | Exposição apenas de dados artificiais do exercício | Reproduzido nesta execução | Não atribuível ao NexaSense; requer captura do dispositivo real |
+| SIM02 | demo/local-lab-output.txt | O atualizador fictício aceitou bytes alterados; a verificação HMAC de comparação rejeitou a alteração | O modelo inseguro não verifica autenticidade/integridade | Reproduzido nesta execução | Não atribuível ao NexaSense; exige verificação no firmware real |
+
+Mitigação conceitual para C01/C03: validar assinatura da imagem, proteger o transporte com autenticação adequada e verificar integridade no dispositivo.

@@ -1,1 +1,1 @@
-Relatório em PDF entregue separadamente como Relatorio-Tecnico-NexaHome.pdf. O relatório declara a ausência de hardware/firmware fornecidos e não apresenta achados fabricados.
+Relatório técnico em PDF. O texto distingue cenários condicionais, resultados da simulação local e itens pendentes de evidência do NexaSense real. Consulte deliverables-checklist.md para conferir o estado de todos os requisitos.
