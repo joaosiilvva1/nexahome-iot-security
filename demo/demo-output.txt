@@ -1,10 +1,6 @@
-Sa√≠da registrada em ambiente local na elabora√ß√£o do material:
-
-DEMO DID√ÅTICA OFFLINE - N√ÉO √â TESTE DO NEXASENSE
-SHA-256 original:   50a5b58f...
-SHA-256 substituto: 665a52d6...
-Pacote alterado aceito pelo verificador fict√≠cio sem assinatura: True
-Interpreta√ß√£o: aus√™ncia de valida√ß√£o permitiria aceitar bytes arbitr√°rios neste modelo simplificado.
-Limite: n√£o demonstra que qualquer firmware ou dispositivo real tenha essa falha.
-
-Observa√ß√£o: os hashes completos devem ser regenerados executando o script; esta transcri√ß√£o abreviada √© somente ilustrativa e n√£o deve ser citada como evid√™ncia do produto.
+DEMO DID¡TICA OFFLINE - N√O … TESTE DO NEXASENSE
+SHA-256 original:   635e4f39567248dc51e065a4e2fb5f059fd275a4633c68cbb36c063204e64cfc
+SHA-256 substituto: 32a2d2db6693014dce43caddc9a71e3ff9a1a4ffc9ae1c4993072277e89a9c72
+Pacote alterado aceito pelo verificador fictÌcio sem assinatura: True
+InterpretaÁ„o: ausÍncia de validaÁ„o permitiria aceitar bytes arbitr·rios neste modelo simplificado.
+Limite: n„o demonstra que qualquer firmware ou dispositivo real tenha essa falha.
