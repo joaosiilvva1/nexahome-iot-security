@@ -51,7 +51,7 @@
           <div class="about-text">
             <p>O enunciado descreve um microcontrolador da família ESP32, sensores de temperatura e umidade, firmware e conectividade Wi-Fi.</p>
             <p>O trabalho organiza a avaliação das interfaces físicas, do armazenamento e firmware, do mecanismo de atualização e das comunicações.</p>
-            <a class="inline-link" href="findings/findings.md">Ver matriz de riscos e estado dos achados <span aria-hidden="true">↗</span></a>
+            <a class="inline-link" href="docs/achados.html">Ver matriz de riscos e estado dos achados <span aria-hidden="true">↗</span></a>
           </div>
           <aside class="status-card" aria-label="Estado da avaliação">
             <div class="feature-top"><span>ESTADO DA AVALIAÇÃO</span><span class="status-dot" aria-hidden="true"></span></div>
@@ -104,7 +104,7 @@
           <article><b>C02</b><div><h3>Depuração exposta</h3><p>O risco depende do acesso físico, dos dados expostos e das proteções da interface observada.</p></div><small>A VERIFICAR</small></article>
           <article><b>C03</b><div><h3>Tráfego sem proteção adequada</h3><p>Se credenciais ou comandos trafegarem sem proteção, um observador local pode lê-los ou alterá-los.</p></div><small>A VERIFICAR</small></article>
         </div>
-        <div class="demo-band"><div><p class="eyebrow">DEMONSTRAÇÃO DIDÁTICA</p><h3>Laboratório local de telemetria e atualização.</h3><p>O simulador envia telemetria sintética por HTTP somente a 127.0.0.1 e compara um atualizador fictício sem assinatura com uma verificação de exemplo. Não testa a placa real.</p></div><a class="button button-light" href="demo/local_lab_simulation.py" download>Ver simulador <span aria-hidden="true">↓</span></a></div>
+        <div class="demo-band"><div><p class="eyebrow">DEMONSTRAÇÃO DIDÁTICA</p><h3>Laboratório local de telemetria e atualização.</h3><p>O simulador envia telemetria sintética por HTTP somente a 127.0.0.1 e compara um atualizador fictício sem assinatura com uma verificação de exemplo. Não testa a placa real.</p></div><a class="button button-light" href="docs/laboratorio.html">Ver simulador <span aria-hidden="true">↓</span></a></div>
       </div>
     </section>
     <section class="case-band" aria-labelledby="case-title">
@@ -122,7 +122,7 @@
           <article><span>03</span><h3>Acesso mínimo</h3><p>Credenciais individuais, logs sem segredos e debug restrito.</p></article>
           <article><span>04</span><h3>Comunicação protegida</h3><p>TLS validado, identidade por dispositivo, integridade e segmentação.</p></article>
         </div>
-        <div class="resource-row"><p>Referências: NISTIR 8259A, ETSI EN 303 645, OWASP ISTG, MITRE EMB3D e documentação Espressif.</p><a class="button button-outline" href="remediation/hardening-plan.md">Plano de hardening ↗</a></div>
+        <div class="resource-row"><p>Referências: NISTIR 8259A, ETSI EN 303 645, OWASP ISTG, MITRE EMB3D e documentação Espressif.</p><a class="button button-outline" href="docs/hardening.html">Plano de hardening ↗</a></div>
       </div>
     </section>
     <section class="section-pad deliverables" aria-labelledby="deliverables-title">
@@ -130,13 +130,13 @@
         <div><p class="eyebrow">07 / Materiais</p><h2 id="deliverables-title">Documentação do projeto.</h2><p>Relatório e registros organizados no repositório; as evidências reais dependem do laboratório.</p></div>
         <div class="deliverable-links">
           <a href="report/Relatorio-Tecnico-NexaHome.pdf">Relatório técnico em PDF <b>↗</b></a>
-          <a href="firmware/analysis-notes.md">Notas de firmware <b>↗</b></a>
-          <a href="hardware/interface-map.md">Mapa físico <b>↗</b></a>
-          <a href="network/protocol-analysis.md">Análise de comunicação <b>↗</b></a>
-          <a href="video/roteiro-ate-4-minutos.md">Roteiro do vídeo <b>↗</b></a>
-          <a href="references.md">Referências <b>↗</b></a>
-          <a href="case-study.md">Caso PurpleAir <b>↗</b></a>
-          <a href="deliverables-checklist.md">Estado dos requisitos <b>↗</b></a>
+          <a href="docs/metodologia.html">Metodologia de análise <b>↗</b></a>
+          <a href="docs/requisitos.html">Requisitos da entrega <b>↗</b></a>
+          <a href="docs/achados.html">Achados e cenários de risco <b>↗</b></a>
+          <a href="docs/laboratorio.html">Demonstração local <b>↗</b></a>
+          <a href="docs/metodologia.html#referencias">Referências e método <b>↗</b></a>
+          <a href="docs/caso-purpleair.html">Caso PurpleAir <b>↗</b></a>
+          <a href="docs/requisitos.html">Estado dos requisitos <b>↗</b></a>
         </div>
       </div>
     </section>
@@ -144,3 +144,4 @@
   <footer class="site-footer"><div class="container footer-inner"><p>NexaSense <span>·</span> Projeto acadêmico de segurança IoT</p><p>Testes somente em dispositivos e redes autorizados.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
 </body>
 </html>
+
