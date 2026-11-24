@@ -1,0 +1,11 @@
+REGISTRO DE PRESERVAÇÃO - preencher com a imagem fornecida
+
+Arquivo original: PENDENTE - firmware não fornecido
+Tamanho em bytes: PENDENTE
+Origem/autorização: PENDENTE
+Data de recebimento: PENDENTE
+SHA-256 (original): PENDENTE - não calcular sem o arquivo
+Cópia de trabalho: PENDENTE
+SHA-256 (cópia): PENDENTE
+Responsável pela coleta: PENDENTE
+Observações: manter o original somente leitura; analisar cópia; não incluir segredos no repositório.

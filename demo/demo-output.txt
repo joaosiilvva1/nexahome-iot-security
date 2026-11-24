@@ -1,0 +1,10 @@
+Saída registrada em ambiente local na elaboração do material:
+
+DEMO DIDÁTICA OFFLINE - NÃO É TESTE DO NEXASENSE
+SHA-256 original:   50a5b58f...
+SHA-256 substituto: 665a52d6...
+Pacote alterado aceito pelo verificador fictício sem assinatura: True
+Interpretação: ausência de validação permitiria aceitar bytes arbitrários neste modelo simplificado.
+Limite: não demonstra que qualquer firmware ou dispositivo real tenha essa falha.
+
+Observação: os hashes completos devem ser regenerados executando o script; esta transcrição abreviada é somente ilustrativa e não deve ser citada como evidência do produto.
